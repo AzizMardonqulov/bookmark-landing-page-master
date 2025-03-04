@@ -65,11 +65,11 @@ li{
 .navbar-left ul li:hover a::after{
     width: 50%;
 }
-.navbar-left ul li:last-child a::before{
+.navbar-left ul li:nth-child(5) a::before{
     width: 0;
     height: 0;
 }
-.navbar-left ul li:last-child a::after{
+.navbar-left ul li:nth-child(5) a::after{
     width: 0;
     height: 0;
 }
@@ -82,4 +82,214 @@ li{
 .navbar-button:hover{
     color: #D1757A !important;
     border: 2px solid #D1757A;
+}
+.navbar-bars{
+    width:40px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+    top: 0;
+    transition: all 0.5s ease;
+}
+.navbar-bars span{
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    background-color: #222;
+    transition: all 0.5s ease;
+}
+.navbar-bars span::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 15px;
+    background-color: #222;
+    transition: all 0.5s ease;
+}
+.navbar-bars span::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 30px;
+    background-color: #222;
+    transition: all 0.5s ease;
+}
+.navbar-medio{
+    display: none;
+}
+.navbar-close{
+    display: none;
+    cursor: pointer;
+}
+.navbar-left ul li:first-child{
+    display: none;
+}
+.navbar-left ul div{
+    display: none;
+}
+.openMedio{
+    top:0 !important;
+}
+.openMed span{
+    top: -5px;
+}
+.openMed span::before{
+    transform: rotate(100deg);
+    top: -5px;
+}
+.openMed span::after{
+    transform: rotate(-120deg);
+    top: 0px;
+    left: 10px;
+}
+
+@media only screen and (max-width:1397px) {
+    .hader{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+@media only screen and (max-width:990px) {
+    .navbar-left{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: -100%;
+        left: 0;
+        background-color:#2f354ffa;
+    }
+    .navbar-left ul{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding-top: 20%;
+        align-items: center;
+    }
+    .navbar-left ul li:first-child{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #596082;
+        padding-bottom: 3rem;
+    }
+    .navbar-left ul li img{
+        width:200px;
+    }
+    .navbar-left ul li{
+        width: 80%;
+        border-bottom: 1px solid #596082;
+        padding-bottom: 3rem;
+    }
+    .navbar-left ul li a{
+        text-align: center;
+        color: #fff;
+        text-align: center;
+    }
+    .navbar-left ul li div{
+        font-size: 30px;
+        color: aliceblue;
+    }
+    .navbar-medio{
+        display: block;
+    }
+    .navbar-bars{
+        opacity: 1;
+        bottom: 1rem;
+    }
+    .navbar-close{
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .list-icon{
+        display: flex;
+        flex-direction:row ;
+        gap: 2rem;
+    }
+    .list-icon a{
+        font-size: 25px;
+        color: #fff;
+    }
+    .list-icon a:hover{
+        color: #D1757A;
+    }
+    .navbar-left ul li:nth-child(5) a{
+        color: #fff !important;
+        border: 1px solid #fff;
+    }
+    .navbar-left ul li:nth-child(5) a:hover{
+        color: #D1757A !important;
+        border: 2px solid #D1757A;
+    }
+    .navbar-left ul li:first-child{
+        display: flex;
+    }
+    .navbar-left ul div{
+        display: flex;
+    }
+}
+@media only screen and (max-width:445px) {
+    .navbar-left ul{
+        gap: 2rem;
+    }
+    .navbar-left ul li{
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+    .navbar-left ul li:first-child{
+        width: 90%;
+        margin-bottom: 0rem;
+    }
+    .navbar-left ul li:first-child img{
+        width: 150px;
+        height: fit-content;
+    }
+    .navbar-left ul li div{
+        font-size: 25px;
+    }
+    .navbar-left ul li{
+        text-align: center;
+        margin-top: 0rem;
+    }
+    .list-icon{
+        display: flex;
+        flex-direction:row ;
+        gap: 2rem;
+    }
+    .list-icon a{
+        font-size: 25px;
+        color: #fff;
+    }
+    .list-icon a:hover{
+        color: #D1757A;
+    }
+    .navbar-left ul li:nth-child(5) a{
+        color: #fff !important;
+        border: 1px solid #fff;
+    }
+    .navbar-left ul li:nth-child(5) a:hover{
+        color: #D1757A !important;
+        border: 2px solid #D1757A;
+    }
+}
+@media only screen and (max-width:410px) {
+    .hader{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .navbar{
+        height: 130px;
+    }
+    .navbar-logo img{
+        width:150px ;
+    }
+    .navbar-bars{
+        transform: scale(0.8);
+    }
+
 }

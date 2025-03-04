@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <title>Bookmark landing page</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -14,13 +15,26 @@
           <div class="navbar-logo">
             <img  src="./images/logo-bookmark.svg" alt="">
           </div>
-          <div class="navbar-left">
+          <div id="navbarMedio" class="navbar-left">
               <ul>
+                  <li>
+                    <img src="./images/medio-navbar-logo.png" alt="">
+                    <div id="MedioCLose" class="navbar-close">X</div>
+                  </li>
                   <li><a href="/">Features</a></li>
                   <li><a href="/">Pricing</a></li>
                   <li><a href="/">Contact</a></li>
-                  <li><a class="navbar-button" href="/">Login</a></li>
+                  <li><a class="navbar-button" href="/">Login</a></li> 
+                  <div class="list-icon">
+                      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://t.me/AzizMardonqulov"><i class="fa-brands fa-telegram"></i></a>
+                  </div>
               </ul>
+          </div>
+          <div class="navbar-medio">
+              <div id="navbarBars" class="navbar-bars">
+                  <span></span>
+              </div>
           </div>
       </div>
   </div>
@@ -133,5 +147,6 @@
   Features
   Pricing
   Contact
+  <script src="./mean.js"></script>
 </body>
 </html>
