@@ -822,14 +822,14 @@ html {
     align-items: center;
     animation: feat 2s ease;
     transition: all 0.5s ease;
-    transform: rotate(0deg);
+    opacity: 1;
 }
 @keyframes feat {
     from{
-        transform: rotate(-20deg);
+        opacity: 0;
     }
     to{
-        transform:rotate(0deg);
+        opacity: 1;
        /* transform: translateZ(0px); */
     }
 }
