@@ -960,16 +960,17 @@ html {
     align-items: center;
     display: flex;
     flex-direction: column;
+    
 }
 .quasion-blog-1{
     width: 60%; 
     margin-bottom: 2rem;   
+    cursor: pointer;
+    overflow: hidden;
 }
 .quasion-blog-1-lable{
     width: 100%;
     height: 3rem;
-    overflow:hidden;
-    /* height: fit-content; */
     border-top: 2px solid #a8a6a6a9;
     padding-top: 1.5rem;
     padding-bottom:1rem;
@@ -979,7 +980,6 @@ html {
 .last-child{
     height: 5rem;
     border-bottom: 2px solid #a8a6a6a9;
-    padding-bottom: 2rem;
 }
 .quasion-blog-1-lable-1{
     width: 100%;
@@ -989,6 +989,7 @@ html {
     font-size: 1.2rem;
 }
 .open-ascet{
+    visibility: visible;
     font-weight: 600;
     color: #262C46;
 }
@@ -998,12 +999,28 @@ html {
     justify-content: center;
 }
 .quasion-more-button a{
-    padding: 13px 35px;
+    padding: 11px 35px;
     background-color: #5266DF;
     border-radius: 4px;
     border: 2px solid #5266DF;
     color: #fff;
     box-shadow: 0px 0px 5em #dcdcdc;
+}
+.quasion-and-ascet{
+    transition: all 0.5s ease;
+    height: 8rem;
+    animation: qu1 3s ease;
+}
+@keyframes qu1 {
+    from{
+        height: 3rem;
+    }to{
+        height: 8rem;
+    }
+}
+.ascet-icon-rotate{
+    transition: all 0.5 ease;
+    transform: rotate(180deg);
 }
 .quasion-more-button a:hover{
     background-color: transparent;
@@ -1031,5 +1048,8 @@ html {
     }
     .quasion-blog-1-lable-1{
         font-size: 0.9rem;
+    }
+    .quasion-blog-1-lable-2{
+        font-size: 0.8rem;
     }
 }
