@@ -929,3 +929,107 @@ html {
         width: 80%;
     }
 }
+.quasion{
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.quasion-lable{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quasion-lable-1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1A203A;
+}
+.quasion-lable-2{
+    width: 50%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #94949E;
+    text-align: center;
+}
+.quasion-blog{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.quasion-blog-1{
+    width: 60%; 
+    margin-bottom: 2rem;   
+}
+.quasion-blog-1-lable{
+    width: 100%;
+    height: 3rem;
+    overflow:hidden;
+    /* height: fit-content; */
+    border-top: 2px solid #a8a6a6a9;
+    padding-top: 1.5rem;
+    padding-bottom:1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.last-child{
+    height: 5rem;
+    border-bottom: 2px solid #a8a6a6a9;
+    padding-bottom: 2rem;
+}
+.quasion-blog-1-lable-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+.open-ascet{
+    font-weight: 600;
+    color: #262C46;
+}
+.quasion-more-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.quasion-more-button a{
+    padding: 13px 35px;
+    background-color: #5266DF;
+    border-radius: 4px;
+    border: 2px solid #5266DF;
+    color: #fff;
+    box-shadow: 0px 0px 5em #dcdcdc;
+}
+.quasion-more-button a:hover{
+    background-color: transparent;
+    color: #5266DF;
+}
+@media only screen and (max-width:800px) {
+    .quasion-blog-1{
+        width: 80%;
+    }   
+}
+@media only screen and (max-width:580px) {
+    .quasion-lable-1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .quasion-lable-2{
+        width: 80%;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:420px) {
+    .quasion-blog-1{
+        width: 90%;
+    }
+    .quasion-blog-1-lable-1{
+        font-size: 0.9rem;
+    }
+}
