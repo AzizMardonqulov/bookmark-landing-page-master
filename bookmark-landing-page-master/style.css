@@ -1053,3 +1053,65 @@ html {
         font-size: 0.8rem;
     }
 }
+/* joined */
+.joined{
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5266DF;
+}
+.joined-lable{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.joined-lable-1{
+    font-size: 1rem;
+    color: #fff;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+.joined-lable-2{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.joined-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.joined-input input{
+    width: 250px;
+    height: 50px;
+    border: 0px;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 1rem;
+    color: #94949E;
+}
+.joined-input button{
+    width: 120px;
+    font-size: 15px;
+    height: 50px;
+    background-color: #F95959;
+    border: 0px;
+    border-radius: 4px;
+    box-shadow: 0px 0xp 1em #596082;
+    color: #fff;
+}
+@media only screen and (max-width:400px) {
+    .joined-input button{
+        width: 120px;
+    }
+    .joined input{
+        width: 210px;
+    }
+}
