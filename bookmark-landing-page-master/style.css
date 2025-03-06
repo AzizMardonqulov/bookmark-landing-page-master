@@ -381,6 +381,11 @@ html {
     }
 
 }
+@media only screen and (max-width:390px) {
+    .navbar {
+        height: 80px;
+    }
+}
 
 .baner {
     width: 100%;
@@ -561,6 +566,8 @@ html {
     flex-direction: column;
     padding-top: 3rem;
     padding-right: 5rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 .features-lable {
@@ -809,4 +816,116 @@ html {
 }
 .features-blog-1:first-child{
     display: flex;
+}
+
+.download{
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.download-lable{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.download-lable-1{
+    font-size: 2rem;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.download-lable-2{
+    width: 40%;
+    font-size: 1.1rem;
+    color: #94949E;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.download-blog{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+}
+.download-blog-1{
+    width: 22%;
+    height: fit-content;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    box-shadow: 5px 4px  1em #cdcdcd7e;
+}
+.download-blog-1:nth-child(2){
+    margin-top: 5rem;
+}
+.download-blog-1:last-child{
+    margin-top: 10rem;
+}
+.download-blog-1-img{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.download-blog-1-img img{
+    width: 30%;
+}
+.download-blog-1-lable{
+    width: 100%;
+    display: flex;
+    height: 100px;
+    border-bottom: 5px dotted #dddde0;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.download-blog-1-lable-1{
+    width:60% ;
+    font-size: 1.2rem;
+    color: #222;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.download-blog-1-lable-2{
+    width: 60%;
+    font-size: 0.9rem;
+    color: #94949E;
+    text-align: center;
+    font-weight: 400;
+}
+.download-blog-1-button{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.download-blog-1-button a{
+    padding: 10px 30px;
+    background-color: #5266DF;
+    border-radius: 4px;
+    color: #fff;
+
+}
+@media only screen and (max-width:1140px) {
+    .download-blog{
+        flex-direction: column;
+    }
+    .download-blog-1{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:674px) {
+    .download-lable-1{
+        font-size: 1.5rem;
+    }
+    .download-lable-2{
+        width: 80%;
+    }
 }
