@@ -7,6 +7,7 @@
     transition: all 0.5s ease;
     text-decoration: none;
     font-family: "Poppins";
+    transition: all 0.5s ease;
 }
 
 li {
@@ -622,6 +623,7 @@ html {
     height: 60PX;
     border-bottom: 1px solid #a8a6a6;
     text-align: center;
+    cursor: pointer;
 }
 
 .features-items-1:first-child {
@@ -692,6 +694,7 @@ html {
     border-radius: 5px;
     box-shadow: 0px 0px 2em #5267dfa5;
 }
+
 @media only screen and (max-width:1150px) {
     body {
         width: 100%;
@@ -781,4 +784,29 @@ html {
     .features-items-1-lable{
         font-size: 9px;
     }
+}
+.openFeat{
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    gap: 8rem;
+    align-items: center;
+    animation: feat 2s ease;
+    transition: all 0.5s ease;
+    transform: rotate(0deg);
+}
+@keyframes feat {
+    from{
+        transform: rotate(-20deg);
+    }
+    to{
+        transform:rotate(0deg);
+       /* transform: translateZ(0px); */
+    }
+}
+.closeFeat{
+    display: none !important;
+}
+.features-blog-1:first-child{
+    display: flex;
 }
