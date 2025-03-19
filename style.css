@@ -579,10 +579,9 @@ html {
     padding-right: 5rem;
     padding-bottom: 3rem;
     margin-bottom: 3rem;
-    transform:scale(1);
-    animation: banerImg linear;
+    animation: banerImg 5s linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 10%;
 }
 @keyframes banerImg {
     from{
